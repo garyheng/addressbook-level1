@@ -839,6 +839,7 @@ public class AddressBook {
         // query user on each parameter for changes
         String[] editedPerson = new String[3];
 
+        System.out.println(LINE_PREFIX + "Leave field blank if not changing parameter.");
         System.out.print(LINE_PREFIX + COMMAND_EDIT_NAME);
         editedPerson[0] = SCANNER.nextLine();
         System.out.print(LINE_PREFIX + COMMAND_EDIT_PHONE);
@@ -1157,6 +1158,7 @@ public class AddressBook {
     private static String getUsageInfoForAllCommands() {
         return getUsageInfoForAddCommand() + LS
                 + getUsageInfoForFindCommand() + LS
+                + getUsageInfoForEditCommand() + LS
                 + getUsageInfoForViewCommand() + LS
                 + getUsageInfoForDeleteCommand() + LS
                 + getUsageInfoForClearCommand() + LS
