@@ -58,6 +58,10 @@
 || find: Finds all persons whose names contain any of the specified keywords (case-sensitive) and displays them as a list with index numbers.
 || 	Parameters: KEYWORD [MORE_KEYWORDS]
 || 	Example: find alice bob charlie
+||
+|| edit: Edits the information of a person identified by the index number user in the last find/list call.
+||  Parameters: INDEX
+||  Example: edit 1
 || 
 || list: Displays all persons as a list with index numbers.
 || 	Example: list
